@@ -1,0 +1,6 @@
+django 
+django-filter
+djangorestframework
+markdown
+Faker
+psycopg2

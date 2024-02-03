@@ -17,7 +17,8 @@ SECRET_KEY = 'django-insecure-hj=wmgywg89re^x9w*+9+(fw#yu_gmxg0!%pf=q(&tu2=@lu=a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
+
 
 
 # Application definition
@@ -79,16 +80,16 @@ DATABASES = {
      }
  }
 
-#DATABASES = {
-   # 'default': {
-        #'ENGINE': os.environ.get('DB_DRIVER','django.db.backends.postgresql'),
-        #'USER': os.environ.get('PG_USER','postgres'),
-        #'PASSWORD':os.environ.get('PG_PASSWORD','postgres'),
-        #'NAME': os.environ.get('PG_DB','postgres'),
-        #'PORT': os.environ.get('PG_PORT','5432'),
-        #'HOST': os.environ.get('PG_HOST','localhost'), # uses the container if set, otherwise it runs locally
-    #}
-#}
+# DATABASES = {
+#    'default': {
+#         'ENGINE':'django.db.backends.postgresql',
+#         'USER': 'my_vuejs_user',
+#         'PASSWORD':'vuejs_password',
+#         'NAME':'my_vuejs_db',
+#         'PORT':'5432',
+#         'HOST':'localhost',
+#     }
+# }
 
 
 REST_FRAMEWORK = {
